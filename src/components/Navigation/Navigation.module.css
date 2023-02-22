@@ -1,6 +1,7 @@
 .wrapper {
   background-color: #091336;
   padding: 20px 12px;
+  max-width: 240px;
 }
 
 .logo {
@@ -8,6 +9,7 @@
 }
 
 .navigation {
+  margin-bottom: 64px;
 }
 .list {
 }
@@ -22,4 +24,32 @@
 
 .icon {
   margin-right: 13px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 8px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  background: #005ff8;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.48;
+  color: #ffffff;
+  padding: 14px 58px 14px 24px;
+  position: relative;
+}
+
+.btnIcon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }

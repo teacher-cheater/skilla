@@ -20,7 +20,7 @@ function Navigation() {
       <a href="#">
         <img className={s.logo} src={logo} alt="logo" />
       </a>
-      <nav className={s.navigtion}>
+      <nav className={s.navigation}>
         <ul className={s.list}>
           <li>
             {" "}
@@ -64,12 +64,15 @@ function Navigation() {
           </li>
         </ul>
       </nav>
-      <button className={s.btn}>
-        Добавить заказ <img src={btnAdd} alt="icons" />{" "}
-      </button>
-      <button className={s.btn}>
-        Оплата <img src={btnPay} alt="icons" />{" "}
-      </button>
+      <div className={s.content}>
+        <button className={s.btn}>
+          Добавить заказ <img className={s.btnIcon} src={btnAdd} alt="icons" />{" "}
+        </button>
+        <button className={s.btn}>
+          Оплата
+          <img className={s.btnIcon} src={btnPay} alt="icons" />{" "}
+        </button>
+      </div>
     </aside>
   );
 }
