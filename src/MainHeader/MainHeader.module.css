@@ -1,0 +1,99 @@
+.mainheader {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0 7px;
+  gap: 48px;
+  margin-bottom: 20px;
+}
+
+.balance {
+  background: #ffffff;
+  border-radius: 48px;
+  padding: 10px 46px 10px 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.48;
+  color: #899cb1;
+  position: relative;
+}
+
+.balance span {
+  color: #122945;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btnbalance {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.choicedate {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.choicedate span {
+  color: #005ff8;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.search {
+  position: relative;
+}
+.search input {
+  padding-left: 28px;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #5e7793;
+  background-color: #f1f4f9;
+}
+
+.search img {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+}
+
+.selects {
+  display: flex;
+  gap: 32px;
+}
+.selects img {
+  position: relative;
+  top: -2px;
+}
+.dropdown {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.48;
+  color: #5e7793;
+  opacity: 0.87;
+  display: flex;
+  gap: 4px;
+  background-color: transparent;
+}

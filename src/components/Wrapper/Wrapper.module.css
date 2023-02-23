@@ -1,6 +1,4 @@
 .wrapper {
-  /*display: flex;*/
-  /*justify-content: space-between;*/
   width: 100%;
   box-shadow: 0px 4px 5px #e9edf3;
   background-color: #f1f4f9;
@@ -23,4 +21,5 @@
   font-size: 15px;
   line-height: 1.48;
   color: #899cb1;
+  align-self: center;
 }
