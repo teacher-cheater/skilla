@@ -1,0 +1,18 @@
+.items {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown {
+  display: flex;
+  gap: 4px;
+}
+.account {
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
