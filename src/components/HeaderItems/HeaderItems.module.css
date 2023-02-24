@@ -12,6 +12,10 @@
   background-color: transparent;
 }
 
+/*.dropdown button:hover {
+  background: url(../../icons/dropdown-hover.svg) 220px center / contain no-repeat;
+}*/
+
 .account {
 }
 
@@ -23,3 +27,7 @@
 .avatar img {
   border-radius: 50%;
 }
+
+/*.arrowdown {
+  background-image: url(../../icons/dropdown-hover.svg);
+}*/

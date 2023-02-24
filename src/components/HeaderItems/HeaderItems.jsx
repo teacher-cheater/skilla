@@ -30,7 +30,7 @@ function HeaderItems() {
       <div className={s.account}>
         <div className={s.avatar}>
           <img src={avatar} alt="ava" />
-          <img src={arrow} alt="arrow" />
+          <img className={s.arrowdown} src={arrow} alt="arrow" />
         </div>
       </div>
     </div>

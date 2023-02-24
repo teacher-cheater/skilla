@@ -46,6 +46,15 @@
   color: #ffffff;
   padding: 14px 58px 14px 24px;
   position: relative;
+  transition: all 0.3s ease-in 0s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0024cb;
+}
+.btn:active {
+  background: #274bc8;
 }
 
 .btnIcon {

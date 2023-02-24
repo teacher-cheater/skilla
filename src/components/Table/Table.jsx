@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import s from "./Table.module.css";
-import avatar from "../../icons/avatar.jpg";
+import incoming from "../../icons/incoming.svg";
+import outgoing from "../../icons/outgoing.svg";
 
 function Table() {
   const [dateStart, setDateStart] = useState("");
@@ -13,34 +14,18 @@ function Table() {
   const [answerErrors, setAnswerErrors] = useState("");
   const [duration, setDuration] = useState("");
 
-  console.log(dateStart);
-  console.log(inOut);
-  console.log(time.substring(0, 5));
-  console.log(phone);
-
   useEffect(() => {
-    //const str = "2022-10-26T15:44:01.000Z";
-
-    //function convertDate(str) {
-    //  const data = new Date(str);
-    //  return `${data.getFullYear()}-${data.getMonth() + 1}-${data.getDate()}`;
-    //}
-
-    //console.log(convertDate(str));
-
-    const data = { username: "John" };
     fetch(
       `https://api.skilla.ru/mango/getList`,
       //?date_start=${dateStart}`,
       //&date_end=${dateEnd}
       //&in_out=1`,
       {
-        method: "POST", // or 'PUT'
+        method: "POST",
         headers: {
           Authorization: "Bearer testtoken",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
       }
     )
       .then((response) => response.json())
@@ -63,7 +48,13 @@ function Table() {
     <div className={s.table}>
       <div className={s.container}>
         <div className={s.data}>
-          <div className={s.type}>/</div>
+          <div className={s.type}>
+            {inOut === 1 ? (
+              <img src={incoming} alt="arrow" />
+            ) : (
+              <img src={outgoing} alt="arrow" />
+            )}
+          </div>
           <div className={s.type}>{time.substring(0, 5)}</div>
           <div className={s.type}>
             <img src={personAvatar} alt="avatar" />

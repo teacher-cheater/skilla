@@ -20,7 +20,7 @@ function MainHeader() {
             <img src={arrowLeft} alt="arrow left" />
           </button>
           <div className={s.choicedate}>
-            <img src={calendar} alt="calendar" />
+            {/*<img src={calendar} alt="calendar" />*/}
             <span>3 дня</span>
           </div>
           <button>
@@ -31,7 +31,11 @@ function MainHeader() {
       <div className={s.bottom}>
         <div className={s.search}>
           <img src={search} alt="icon search" />
-          <input type="text" placeholder="Поиск по звонкам" />
+          <input
+            className={s.input}
+            type="text"
+            placeholder="Поиск по звонкам"
+          />
         </div>
         <div className={s.selects}>
           <button className={s.dropdown}>
