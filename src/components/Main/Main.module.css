@@ -8,7 +8,9 @@
 }
 
 .container {
-  display: flex;
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: 52px 78px 85px 335px 215px 1fr 100px;
   width: 100%;
   padding: 20px 40px;
 
@@ -21,10 +23,10 @@
 }
 
 .data {
-  width: 100%;
+  /*width: 100%;*/
 
-  display: flex;
-  gap: 30px;
+  /*display: flex;*/
+  /*gap: 30px;*/
 }
 
 .type {

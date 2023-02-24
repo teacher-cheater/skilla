@@ -30,6 +30,11 @@ button {
   color: #122945;
   flex-direction: column;
   gap: 10px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.balance:hover span {
+  color: #0024cb;
 }
 
 .btnbalance {

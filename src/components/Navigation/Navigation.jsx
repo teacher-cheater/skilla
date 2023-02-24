@@ -23,44 +23,67 @@ function Navigation() {
       <nav className={s.navigation}>
         <ul className={s.list}>
           <li>
-            {" "}
-            <img className={s.icon} src={timeline} alt="" /> Итоги
+            <div className={s.choiceBlock}>
+              {" "}
+              <img className={s.icon} src={timeline} alt="Итоги" /> Итоги
+            </div>
           </li>
           <li>
-            {" "}
-            <img className={s.icon} src={orders} alt="" /> Заказы
+            <div className={s.choiceBlock}>
+              {" "}
+              <img className={s.icon} src={orders} alt="Заказы" /> Заказы
+            </div>
           </li>
           <li>
-            {" "}
-            <img className={s.icon} src={mail} alt="" /> Сообщения
+            <div className={s.choiceBlock}>
+              {" "}
+              <img className={s.icon} src={mail} alt="Сообщения" /> Сообщения
+            </div>
+          </li>
+          <li className={s.choice}>
+            <div className={s.choiceBlock}>
+              <img className={s.icon} src={calls} alt="Звонки" /> Звонки
+            </div>
           </li>
           <li>
-            {" "}
-            <img className={s.icon} src={calls} alt="" /> Звонки
+            <div className={s.choiceBlock}>
+              {" "}
+              <img className={s.icon} src={people} alt="Контрагенты" />{" "}
+              Контрагенты
+            </div>
           </li>
           <li>
-            {" "}
-            <img className={s.icon} src={people} alt="" /> Контрагенты
+            <div className={s.choiceBlock}>
+              {" "}
+              <img className={s.icon} src={documents} alt="Документы" />{" "}
+              Документы
+            </div>
           </li>
           <li>
-            {" "}
-            <img className={s.icon} src={documents} alt="" /> Документы
+            <div className={s.choiceBlock}>
+              {" "}
+              <img className={s.icon} src={person} alt="Исполнители" />{" "}
+              Исполнители
+            </div>
           </li>
           <li>
-            {" "}
-            <img className={s.icon} src={person} alt="" /> Исполнители
+            <div className={s.choiceBlock}>
+              {" "}
+              <img className={s.icon} src={cases} alt="Отчеты" /> Отчеты
+            </div>
           </li>
           <li>
-            {" "}
-            <img className={s.icon} src={cases} alt="" /> Отчеты
+            <div className={s.choiceBlock}>
+              База <img className={s.icon} src={library} alt="База знаний" />{" "}
+              знаний
+            </div>
           </li>
           <li>
-            {" "}
-            <img className={s.icon} src={library} alt="" /> База знаний
-          </li>
-          <li>
-            {" "}
-            <img className={s.icon} src={settings} alt="" /> Настройки
+            <div className={s.choiceBlock}>
+              {" "}
+              <img className={s.icon} src={settings} alt="Настройки" />{" "}
+              Настройки
+            </div>
           </li>
         </ul>
       </nav>
