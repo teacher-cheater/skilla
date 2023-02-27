@@ -4,7 +4,7 @@ import HeaderItems from "../HeaderItems/HeaderItems";
 import s from "./Wrapper.module.css";
 import MainContent from "../MainContent/MainContent";
 
-function Wrapper({ dataResults, setDataResults }) {
+function Wrapper({ sort, onClickCategory, dataResults, setDataResults }) {
   return (
     <div className={s.wrapper}>
       <div className={s.header}>
@@ -17,7 +17,12 @@ function Wrapper({ dataResults, setDataResults }) {
           />
         </div>
       </div>
-      <MainContent dataResults={dataResults} setDataResults={setDataResults} />
+      <MainContent
+        sort={sort}
+        onClickCategory={onClickCategory}
+        dataResults={dataResults}
+        setDataResults={setDataResults}
+      />
     </div>
   );
 }

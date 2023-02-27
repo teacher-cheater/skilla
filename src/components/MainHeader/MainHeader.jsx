@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import s from "./MainHeader.module.css";
-import topup from "../icons/btn-balance.svg";
-import search from "../icons/search.svg";
+import "../../App.css";
 
-function MainHeader() {
+function MainHeader({ onClickCategory, sort }) {
+  console.log(sort);
+
+  const [open, setOpen] = useState(false);
+  const list = [
+    "Все звонки",
+    "Все клиенты",
+    "Новые клиенты",
+    "Все исполнители",
+    "Через приложение",
+    "Прочие звонки",
+  ];
+
+  //const employees = ["Все сотрудники", "Константин К.", "Полина З."];
+
+  //const sortEmpls = employees[]
+  const sortName = list[sort];
+
+  const onClickListItem = (i) => {
+    onClickCategory(i);
+    setOpen(true);
+  };
+
   return (
     <div className={s.mainheader}>
       <div className={s.top}>
@@ -94,6 +115,7 @@ function MainHeader() {
             </svg>
           </button>
           <button className={s.dropdown}>
+            <span onClick={() => setOpen(!open)}> {sortName} </span>
             Все сотрудники
             <svg
               className={s.arrowDown}
@@ -107,7 +129,7 @@ function MainHeader() {
             </svg>
           </button>
           <button className={s.dropdown}>
-            Все звонки
+            <span onClick={() => setOpen(!open)}> {sortName} </span>
             <svg
               className={s.arrowDown}
               width="10"
@@ -119,6 +141,19 @@ function MainHeader() {
               <path d="M9.90008 0.601167L9.39911 0.100235C9.33236 0.0333416 9.25546 0 9.16853 0C9.08181 0 9.00494 0.0333416 8.93819 0.100235L5.00005 4.03816L1.06209 0.100341C0.995301 0.033447 0.918439 0.000105232 0.831611 0.000105232C0.744747 0.000105232 0.667886 0.033447 0.601132 0.100341L0.100235 0.601308C0.0333416 0.668061 0 0.744922 0 0.831786C0 0.91858 0.0334469 0.995441 0.100235 1.06219L4.76957 5.73164C4.83633 5.79843 4.91322 5.8318 5.00005 5.8318C5.08688 5.8318 5.16364 5.79843 5.23036 5.73164L9.90008 1.06219C9.96683 0.995406 10 0.918545 10 0.831786C10 0.744922 9.96683 0.668061 9.90008 0.601167Z" />
             </svg>
             {/* сортировка */}
+            {open && (
+              <ul className={s.popupSort}>
+                {list.map((name, ind) => (
+                  <li
+                    key={ind}
+                    onClick={() => onClickListItem(ind)}
+                    className={sort === ind ? "active" : ""}
+                  >
+                    {name}
+                  </li>
+                ))}
+              </ul>
+            )}
           </button>
           <button className={s.dropdown}>
             Все источники
@@ -148,7 +183,6 @@ function MainHeader() {
           </button>
           <button className={s.dropdown}>
             Все ошибки
-            {/*<img src={arrowDown} alt="arrow bottom" />*/}
             <svg
               className={s.arrowDown}
               width="10"

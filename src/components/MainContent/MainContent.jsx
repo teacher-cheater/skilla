@@ -1,13 +1,13 @@
 import React from "react";
 import s from "./MainContent.module.css";
-import MainHeader from "../../MainHeader/MainHeader";
+import MainHeader from "../MainHeader/MainHeader";
 import Main from "../Main/Main";
 
-function MainContent({ dataResults, setDataResults }) {
+function MainContent({ onClickCategory, sort, dataResults, setDataResults }) {
   return (
     <div className={s.main}>
       <div className={s.maincontainer}>
-        <MainHeader />
+        <MainHeader onClickCategory={onClickCategory} sort={sort} />
         <Main dataResults={dataResults} setDataResults={setDataResults} />
       </div>
     </div>

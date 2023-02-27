@@ -5,6 +5,9 @@ import Wrapper from './components/Wrapper/Wrapper';
 
 function App() {
   const [dataResults, setDataResults] = useState([]);
+  const [sortCall, setSortCall] = useState(0)
+  //const [sortEmployees, setSortEmployees] = useState(0)
+
   useEffect(() => {
     fetch(
       `https://api.skilla.ru/mango/getList`,
@@ -28,7 +31,9 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      <Wrapper dataResults={dataResults} setDataResults={setDataResults} />
+      <Wrapper sort={sortCall} onClickCategory={(i) => setSortCall(i)} dataResults={dataResults} setDataResults={setDataResults}
+      />
+
     </div>
   );
 }
