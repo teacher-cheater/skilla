@@ -112,14 +112,18 @@ button {
   align-items: center;
 }
 
-.selects button:hover {
+.dropdown:hover {
   color: #005ff8;
   transition: all 0.3s ease-in 0s;
 }
+.dropdown:hover svg {
+  color: #005ff8;
+}
 
-.selects img {
+.selects svg {
   position: relative;
-  top: -2px;
+  top: 6px;
+  left: 2px;
 }
 
 .dropdown {
@@ -129,6 +133,21 @@ button {
   color: #5e7793;
   opacity: 0.87;
   display: flex;
-  gap: 4px;
+  gap: 6px;
   background-color: transparent;
+}
+
+.iconCalendar,
+.arrowLeft,
+.arrowRight,
+.arrowDown {
+  color: #899cb1;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.iconCalendar:hover,
+.arrowLeft:hover,
+.arrowRight:hover {
+  color: #005ff8;
 }

@@ -74,8 +74,8 @@ function Navigation() {
           </li>
           <li>
             <div className={s.choiceBlock}>
-              База <img className={s.icon} src={library} alt="База знаний" />{" "}
-              знаний
+              <img className={s.icon} src={library} alt="База знаний" />
+              База знаний{" "}
             </div>
           </li>
           <li>

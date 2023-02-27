@@ -23,21 +23,6 @@
   background: rgba(212, 223, 243, 0.17);
 }
 
-.data {
-  /*width: 100%;*/
-  /*display: flex;*/
-  /*max-width: 600px;*/
-  /*justify-content: space-between;*/
-  /*display: grid;*/
-  /*grid-template-columns: auto;*/
-  /*gap: 30px;*/
-  /*display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-  grid-gap: 2rem;
-  margin: 2rem;*/
-  /*align-items: center;*/
-}
-
 .type {
   display: flex;
   align-items: center;
@@ -55,6 +40,12 @@
 .text {
   display: flex;
   align-items: center;
+}
+
+.grade {
+  display: flex;
+  align-items: center;
+  color: #ea1a4f;
 }
 
 .times {
