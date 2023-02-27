@@ -9,7 +9,16 @@ function MainHeader() {
       <div className={s.top}>
         <button className={s.balance}>
           Баланс: <span>272 ₽</span>
-          <img className={s.btnbalance} src={topup} alt="icon" />
+          <svg
+            className={s.btnbalance}
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM18 13.2H13.2V18H10.8V13.2H6V10.8H10.8V6H13.2V10.8H18V13.2Z" />
+          </svg>
         </button>
         <div className={s.calendar}>
           <button>
@@ -54,7 +63,16 @@ function MainHeader() {
       </div>
       <div className={s.bottom}>
         <div className={s.search}>
-          <img src={search} alt="icon search" />
+          <svg
+            className={s.searchIcon}
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M11.4351 10.0629H10.7124L10.4563 9.81589C11.3528 8.77301 11.8925 7.4191 11.8925 5.94625C11.8925 2.66209 9.23042 0 5.94625 0C2.66209 0 0 2.66209 0 5.94625C0 9.23042 2.66209 11.8925 5.94625 11.8925C7.4191 11.8925 8.77301 11.3528 9.81589 10.4563L10.0629 10.7124V11.4351L14.6369 16L16 14.6369L11.4351 10.0629ZM5.94625 10.0629C3.66838 10.0629 1.82962 8.22413 1.82962 5.94625C1.82962 3.66838 3.66838 1.82962 5.94625 1.82962C8.22413 1.82962 10.0629 3.66838 10.0629 5.94625C10.0629 8.22413 8.22413 10.0629 5.94625 10.0629Z" />
+          </svg>
           <input
             className={s.input}
             type="text"
@@ -64,7 +82,6 @@ function MainHeader() {
         <div className={s.selects}>
           <button className={s.dropdown}>
             Все типы
-            {/*<img src={arrowDown} alt="arrow bottom" />*/}
             <svg
               className={s.arrowDown}
               width="10"

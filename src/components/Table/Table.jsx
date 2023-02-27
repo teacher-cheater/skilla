@@ -5,7 +5,6 @@ import outgoing from "../../icons/outgoing.svg";
 import call from "../../icons/call.svg";
 
 function Table({ dataResults, setDataResults }) {
-  console.log(dataResults);
   return (
     <>
       {dataResults.map((data) => (

@@ -26,6 +26,14 @@ button {
   position: relative;
 }
 
+.balance:hover svg {
+  color: #0000f4;
+}
+
+.balance:active svg {
+  color: #274bc8;
+}
+
 .balance span {
   color: #122945;
   flex-direction: column;
@@ -42,6 +50,8 @@ button {
   top: 50%;
   right: 12px;
   transform: translateY(-50%);
+  color: #005ff8;
+  transition: all 0.3s ease 0s;
 }
 
 .calendar {
@@ -54,11 +64,6 @@ button {
   display: flex;
   gap: 8px;
   align-items: center;
-  /*background-image: url(/icons/icon-calendar);*/
-  /*background-image: url("calendar");*/
-}
-.choicedate:hover {
-  /*background-image: url("../icons/calendar-hover.svg");*/
 }
 
 .choicedate span {
@@ -77,9 +82,11 @@ button {
 .search {
   position: relative;
 }
-
+.search:hover svg {
+  transition: all 0.3s ease 0s;
+  color: #005ff8;
+}
 .search input {
-  /*padding-left: 28px;*/
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
@@ -87,7 +94,12 @@ button {
   background-color: #f1f4f9;
   padding: 10px 315px 10px 46px;
 }
-
+.searchIcon {
+  color: #5e7793;
+  position: absolute;
+  top: 12px;
+  left: 14px;
+}
 .input:focus {
   outline-style: solid;
   outline-color: #899cb1;
@@ -97,13 +109,6 @@ button {
 
 .input:focus {
   outline-color: #005ff8;
-}
-
-.search img {
-  position: absolute;
-  top: 50%;
-  left: 18px;
-  transform: translateY(-50%);
 }
 
 .selects {
