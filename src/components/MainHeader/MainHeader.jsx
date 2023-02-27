@@ -3,8 +3,6 @@ import s from "./MainHeader.module.css";
 import "../../App.css";
 
 function MainHeader({ onClickCategory, sort }) {
-  console.log(sort);
-
   const [open, setOpen] = useState(false);
   const list = [
     "Все звонки",
@@ -115,7 +113,6 @@ function MainHeader({ onClickCategory, sort }) {
             </svg>
           </button>
           <button className={s.dropdown}>
-            <span onClick={() => setOpen(!open)}> {sortName} </span>
             Все сотрудники
             <svg
               className={s.arrowDown}

@@ -5,7 +5,7 @@ import incoming from "../../icons/incoming.svg";
 import outgoing from "../../icons/outgoing.svg";
 import call from "../../icons/call.svg";
 
-function Table({ dataResults, setDataResults }) {
+function Table({ dataResults }) {
   //const [voiceMessage, setVoiceMessage] = useState([]);
 
   //useEffect(() => {
@@ -27,8 +27,6 @@ function Table({ dataResults, setDataResults }) {
   //      console.error("Error:", error);
   //    });
   //}, []);
-
-  console.log(dataResults);
 
   return (
     <>

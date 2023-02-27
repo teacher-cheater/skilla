@@ -37,12 +37,6 @@ function HeaderItems() {
                 />
               </svg>
             </button>
-            {/*<ul class={s.list}>
-            <li class={s.item}>ИП Сидорова Александра Михайловна 1</li>
-            <li class={s.item}>ИП Сидорова Александра Михайловна 2</li>
-            <li class={s.item}>ИП Сидорова Александра Михайловна 3</li>
-            <li class={s.item}>ИП Сидорова Александра Михайловна 4</li>
-          </ul>*/}
           </div>
         </div>
       </div>
