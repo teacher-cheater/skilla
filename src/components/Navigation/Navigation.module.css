@@ -4,18 +4,15 @@
   max-width: 240px;
   width: 100%;
 }
-.wrapper a {
-  display: flex;
-  padding: 0 14px;
-}
+
 .logo {
   margin-bottom: 32px;
+  display: flex;
+  padding: 0 14px;
 }
 
 .navigation {
   margin-bottom: 64px;
-}
-.list {
 }
 
 .list li {
@@ -29,10 +26,7 @@
 }
 
 .list li:hover {
-  /*position: relative;*/
-  /*left: -10px;*/
   background: rgba(216, 228, 251, 0.2);
-  /*width: 240px;*/
 }
 
 .icon {
@@ -110,6 +104,4 @@
   position: absolute;
   top: 0;
   left: 0;
-  /*transform: translateY(-50%);*/
-  /*border-radius: 50%;*/
 }

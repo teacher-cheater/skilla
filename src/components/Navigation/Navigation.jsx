@@ -17,9 +17,7 @@ import timeline from "./iconsList/timeline.svg";
 function Navigation() {
   return (
     <aside className={s.wrapper}>
-      <a href="#">
-        <img className={s.logo} src={logo} alt="logo" />
-      </a>
+      <img className={s.logo} src={logo} alt="logo" />
       <nav className={s.navigation}>
         <ul className={s.list}>
           <li>
